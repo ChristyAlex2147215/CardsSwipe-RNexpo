@@ -9,7 +9,7 @@ const Card = ({ item, isFirst, swipe,innerWidth, ...rest}) => {
   // Define animations for card rotation and opacity based on swipe position
   const rotate = swipe.x.interpolate({
     inputRange: [-1000, 0, 1000],
-    outputRange: ['-8deg', '0deg', '8deg'],
+    outputRange: ['-50deg', '0deg', '50deg'],
   });
   const likeOpacity = swipe.x.interpolate({
     inputRange: [10, 100],
